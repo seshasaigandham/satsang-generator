@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: satsang-generator
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 5001
